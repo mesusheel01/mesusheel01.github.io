@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Baloo+Da+2:wght@500&family=Balsamiq+Sans&family=Josefin+Sans:wght@200&family=Poppins:wght@200&family=Roboto+Mono:wght@200&display=swap');
-
+html{
+    font-size: 1px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +18,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20rem 10%;
     background: transparent;
     display: flex;
     justify-content: space-around;
@@ -26,7 +28,7 @@ body{
 
 .logo
 {
-    font-size: 25px;
+    font-size: 25rem;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -36,11 +38,11 @@ body{
 }
 .navbar a{
     display: inline-block;
-    font-size: 18px;
+    font-size: 18rem;
     color: #fff;
     text-decoration: none;
     font-weight:500 ;
-    margin-left: 35px;
+    margin-left: 35rem;
     transition: 0.3s;
     opacity: 0;
     animation:slideTop .5s ease forwards; 
@@ -60,16 +62,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 70rem 10% 0;
 
 }
 
 .home-content{
-    max-width: 600px;
+    max-width: 600rem;
 }
 
 .home-content h3{
-    font-size: 32px;
+    font-size: 32rem;
     font-weight: 700;
     opacity: 0;
     animation:slideBottom 1s ease forwards;
@@ -78,7 +80,7 @@ body{
 
 .home-content h3:nth-of-type(2)
 {
-    margin-bottom: 30px;
+    margin-bottom: 30rem;
 }
 
 .home-content h3 span{
@@ -86,16 +88,16 @@ body{
 }
 
 .home-content h1{
-     font-size: 56px;
+     font-size: 56rem;
      font-weight: 700;
-     margin: -3px 0;
+     margin: -3rem0;
      opacity: 0;
      animation:slideRight 1s ease forwards;
      animation-delay: 1s;
 }
 
 .home-content p{
-    font-size: 16px;
+    font-size: 16rem;
     opacity: 0;
     animation:slideLeft 1s ease forwards;
     animation-delay: 1s;
@@ -103,8 +105,8 @@ body{
 
 .home-img img
 {
-    max-width: 300px;
-    margin-right: 100px ;
+    max-width: 300rem;
+    margin-right: 100rem;
     opacity: 0;
     animation:zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
@@ -114,15 +116,15 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 30rem;
+    height: 25rem;
     background : transparent;
-    border: 2px solid #d95f2e;
+    border: 2remsolid #d95f2e;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 20rem;
     color: #d95f2e;
     text-decoration: none;
-    margin: 30px 15px 30px 0;
+    margin: 30rem 15rem 30rem 0;
     opacity: 0;
     animation:slideRight 1s ease forwards;
     animation-delay:calc(.2s * var(--i));
@@ -131,19 +133,19 @@ body{
 .social-media a:hover{
     background: #d95f2e;
     color: #00232C;
-    box-shadow: 0 0 20px #d95f2e;
+    box-shadow: 0 0 20rem #d95f2e;
 }
 
 .btn
 {
     display: inline-block;
-    padding: 12px 28px;
+    padding: 12rem 28rem;
     background: #d95f2e;
-    border-radius: 40px;
-    box-shadow: 0 0 10px #d95f2e;
-    font-size: 16px;
+    border-radius: 40rem;
+    box-shadow: 0 0 10rem #d95f2e;
+    font-size: 16rem;
     color:#00232C;
-    letter-spacing: 1px;
+    letter-spacing: 1rem;
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
@@ -153,12 +155,14 @@ body{
 .aboutme{
     color: #d95f2e;
 }
-
+.ulist{
+    font-size: 15rem;
+}
 
 /* Keyframes animation */
 @keyframes slideRight {
     0% {
-        transform: translateX(-100px);
+        transform: translateX(-100rem);
         opacity: 0;
     }
     100%{
@@ -169,7 +173,7 @@ body{
 @keyframes slideLeft {
     0%
     {
-        transform: translateX(100px);
+        transform: translateX(100rem);
         opacity: 0;
     }
     100%{
@@ -180,7 +184,7 @@ body{
 @keyframes slideTop {
     0%
     {
-        transform: translateY(100px);
+        transform: translateY(100rem);
         opacity: 0;
     }
     100%{
@@ -191,7 +195,7 @@ body{
 @keyframes slideBottom {
     0%
     {
-        transform: translateY(-100px);
+        transform: translateY(-100rem);
         opacity: 0;
     }
     100%{
@@ -216,7 +220,7 @@ body{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(-15px);
+        transform: translateY(-15rem);
     }
     100%{
         transform: translateY(0);
